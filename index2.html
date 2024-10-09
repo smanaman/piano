@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <div class="main">
+
+        <button id="a">A</button>
+        <button class="black"></button>
+        <button id="b">B</button>
+        <button class="black"></button>
+        <button id="c">C</button>
+        <button class="black"></button>
+        <button id="d">D</button>
+        <button class="black"></button>
+        <button id="e">E</button>
+        <button class="black"></button>
+        <button id="f">F</button>
+        <button class="black"></button>
+        <button id="g">G</button>
+        <button class="black"></button>
+        <button id="h">H</button>
+        <button class="black"></button>
+        <button id="i">I</button>
+        <button class="black"></button>
+        <button id="j">J</button>
+        <button class="black"></button>
+        <button id="k">K</button>
+        <button class="black"></button>
+        <button id="l">L</button>
+        <button class="black"></button>
+        <button id="m">M</button>
+    </div>
+    <!-- audiofile -->
+    <!-- button ==== a -->
+    <audio id="audio" controls style="display:none">
+        <source src="./audio/piano-g-6200.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <!-- button ==== b -->
+    <audio id="audiotwo" controls style="display:none">
+        <source src="./audio/a10.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <!-- button ===3 -->
+    <audio id="audiothree" controls style="display:none">
+        <source src="./audio/a4.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <!-- button ==== 4 -->
+    <audio id="audiofour" controls style="display:none">
+        <source src="./audio/a2.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <!-- button ==== 5 -->
+    <audio id="audiofive" controls style="display:none">
+        <source src="./audio/a1.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <!-- button ==== 6 -->
+    <audio id="audiosix" controls style="display:none">
+        <source src="./audio/a5.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <!-- button ==== 7 -->
+    <audio id="audioseven" controls style="display:none">
+        <source src="./audio/a6.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <!-- button ==== 8 -->
+    <audio id="audioeight" controls style="display:none">
+        <source src="./audio/a7.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <!-- button ==== 9 -->
+    <audio id="audionine" controls style="display:none">
+        <source src="./audio/a8.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <!-- button ==== 10 -->
+    <audio id="audioten" controls style="display:none">
+        <source src="./audio/a9.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <!-- button ==== 11 -->
+    <audio id="audioeleven" controls style="display:none">
+        <source src="./audio/a10.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <!-- button ==== 12 -->
+    <audio id="audiotaval" controls style="display:none">
+        <source src="./audio/a11.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <!-- button ==== 13 -->
+    <audio id="audiom" controls style="display:none">
+        <source src="./audio/a12.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <!-- script -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'a') {
+                setTimeout(() => {
+
+                    document.getElementById('audio').play();
+                    document.getElementById('a').style.backgroundColor='red';
+                }, 100);
+            }
+        })
+
+
+    </script>
+    <!-- button===b -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'b') {
+                setTimeout(() => {
+
+                    document.getElementById('audiotwo').play()
+                    document.getElementById('b').style.backgroundColor='red';
+                    
+                    
+                }, 100);
+               
+
+            }
+
+        })
+    </script>
+    <!-- button===c -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'c') {
+                setTimeout(() => {
+                    document.getElementById('audiothree').play()
+                    document.getElementById('c').style.backgroundColor='red';
+                }, 100);
+            }
+        })
+    </script>
+    <!-- button===d -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'd') {
+                setTimeout(() => {
+                    document.getElementById('audiofour').play()
+                    document.getElementById('d').style.backgroundColor='red';
+                }, 100);
+            }
+        })
+    </script>
+    <!-- button===e -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'e') {
+                setTimeout(() => {
+                    document.getElementById('audiofive').play()
+                    document.getElementById('e').style.backgroundColor='red';
+                }, 100);
+            }
+        })
+    </script>
+    <!-- button===f -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'f') {
+                setTimeout(() => {
+                    document.getElementById('audiosix').play()
+                    document.getElementById('f').style.backgroundColor='red';
+                }, 200);
+
+            }
+        })
+    </script>
+    <!-- button===g -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'g') {
+                setTimeout(() => {
+                    document.getElementById('audioseven').play()
+                    document.getElementById('g').style.backgroundColor='red';
+                }, 200);
+
+            }
+        })
+    </script>
+    <!-- button===h -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'h') {
+                setTimeout(() => {
+                    document.getElementById('audioeight').play()
+                    document.getElementById('h').style.backgroundColor='red';
+                }, 200);
+
+            }
+        })
+    </script>
+    <!-- button===i -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'i') {
+                setTimeout(() => {
+                    document.getElementById('audionine').play()
+                    document.getElementById('i').style.backgroundColor='red';
+                }, 200);
+
+            }
+        })
+    </script>
+    <!-- button===j -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'j') {
+                setTimeout(() => {
+                    document.getElementById('audioten').play()
+                    document.getElementById('j').style.backgroundColor='red';
+                }, 200);
+
+            }
+        })
+    </script>
+    <!-- button===k -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'k') {
+                setTimeout(() => {
+                    document.getElementById('audioeleven').play()
+                    document.getElementById('k').style.backgroundColor='red';
+
+                }, 200);
+            }
+        })
+    </script>
+    <!-- button===l -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'l') {
+                setTimeout(() => {
+                    document.getElementById('audiotaval').play()
+                    document.getElementById('l').style.backgroundColor='red';
+                }, 200);
+            }
+        })
+    </script>
+    <!-- button===m -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'm') {
+                setTimeout(() => {
+                    document.getElementById('audiom').play()
+                    document.getElementById('m').style.backgroundColor='red';
+                }, 200);
+            }
+        })
+    </script>
+</body>
+
+</html>
