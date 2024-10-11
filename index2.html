@@ -12,31 +12,37 @@
     <div class="main">
 
         <button id="a">A</button>
-        <button class="black"></button>
+        <button class="black">N</button>
         <button id="b">B</button>
-        <button class="black"></button>
+        <button class="black">O</button>
         <button id="c">C</button>
-        <button class="black"></button>
+        <button class="black">P</button>
         <button id="d">D</button>
-        <button class="black"></button>
+        <button class="black">Q</button>
         <button id="e">E</button>
-        <button class="black"></button>
+        <button class="black">R</button>
         <button id="f">F</button>
-        <button class="black"></button>
+        <button class="black">S</button>
         <button id="g">G</button>
-        <button class="black"></button>
+        <button class="black">T</button>
         <button id="h">H</button>
-        <button class="black"></button>
+        <button class="black">U</button>
         <button id="i">I</button>
-        <button class="black"></button>
+        <button class="black">V</button>
         <button id="j">J</button>
-        <button class="black"></button>
+        <button class="black">W</button>
         <button id="k">K</button>
-        <button class="black"></button>
+        <button class="black">X</button>
         <button id="l">L</button>
-        <button class="black"></button>
+        <button class="black">Y</button>
         <button id="m">M</button>
     </div>
+
+    <div class="second"><button id="z">Z</button></div>
+
+    <audio id="fari" src="./audio/fari fari (mp3cut.net).mp3"></audio>
+
+
     <!-- audiofile -->
     <!-- button ==== a -->
     <audio id="audio" controls style="display:none">
@@ -90,6 +96,40 @@
     <audio id="audiom" controls style="display:none">
         <source src="./audio/a12.mp3" type="audio/mpeg"> Your browser does not support the audio element.
     </audio>
+    <!-- button ==== 14 -->
+    <audio id="audion" controls style="display:none">
+        <source src="./audio/c6-82019.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <!-- button ==== 15 -->
+    <audio id="audioo" controls style="display:none">
+        <source src="./audio/g2-89126.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+    <!-- button ==== 16 -->
+    <audio id="audiop" controls style="display:none">
+        <source src="./audio/piano-cord-105889.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+    <!-- button ==== 17 -->
+    <audio id="audioq" controls style="display:none">
+        <source src="./audio/piano-g-6200.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+    <!-- button ==== 18 -->
+    <audio id="audior" controls style="display:none">
+        <source src="./audio/piano-plinks-84919.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <!-- button ==== 19 -->
+    <audio id="audios" controls style="display:none">
+        <source src="./audio/pianoffb6-audiotrimmercom-36364.mp3" type="audio/mpeg"> Your browser does not support the
+        audio element.
+    </audio>
+    <!-- button ==== 20 -->
+    <audio id="audiot" controls style="display:none">
+        <source src="./audio/pianofff6-audiotrimmercom-36669.mp3" type="audio/mpeg"> Your browser does not support the
+        audio element.
+    </audio>
+
     <!-- script -->
     <script>
         document.addEventListener("keypress", (event) => {
@@ -97,8 +137,17 @@
                 setTimeout(() => {
 
                     document.getElementById('audio').play();
-                    document.getElementById('a').style.backgroundColor='red';
+                    document.getElementById('a').style.backgroundColor = 'black';
+                    document.getElementById('a').style.color = 'white';
+                    let arr = ['b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+                    for (let i = 0; i < arr.length; i++) {
+                        document.getElementById(arr[i]).style.backgroundColor = 'white';
+                        document.getElementById(arr[i]).style.color = 'black';
+                    }
                 }, 100);
+            }
+            else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm') {
+                document.getElementById('audio').pause();
             }
         })
 
@@ -111,11 +160,38 @@
                 setTimeout(() => {
 
                     document.getElementById('audiotwo').play()
-                    document.getElementById('b').style.backgroundColor='red';
-                    
-                    
+                    document.getElementById('b').style.backgroundColor = 'black';
+                    document.getElementById('b').style.color = 'white';
+
+                    let arr = ['a', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+                    for (let i = 0; i < arr.length; i++) {
+                        document.getElementById(arr[i]).style.backgroundColor = 'white';
+                        document.getElementById(arr[i]).style.color = 'black';
+                    }
+
+
                 }, 100);
-               
+
+
+            }
+            else if (event.key === 'a' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm') {
+                document.getElementById('audiotwo').pause();
+                document.getElementById('audio').load();
+                document.getElementById('audiotwo').load();
+                document.getElementById('audiothree').load();
+                document.getElementById('audiofour').load();
+                document.getElementById('audiofive').load();
+                document.getElementById('audiosix').load();
+                document.getElementById('audioseven').load();
+                document.getElementById('audioeight').load();
+                document.getElementById('audionine').load();
+                document.getElementById('audioten').load();
+                document.getElementById('audioeleven').load();
+                document.getElementById('audiotaval').load();
+                document.getElementById('audiom').load();
+                document.getElementById('audioo').load();
+                document.getElementById('audiop').load();
+                document.getElementById('audioq').load();
 
             }
 
@@ -127,8 +203,34 @@
             if (event.key === 'c') {
                 setTimeout(() => {
                     document.getElementById('audiothree').play()
-                    document.getElementById('c').style.backgroundColor='red';
+                    document.getElementById('c').style.backgroundColor = 'black';
+                    document.getElementById('c').style.color = 'white'; let arr = ['a', 'b', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+                    for (let i = 0; i < arr.length; i++) {
+                        document.getElementById(arr[i]).style.backgroundColor = 'white';
+                        document.getElementById(arr[i]).style.color = 'black';
+                    }
                 }, 100);
+            }
+            else if (event.key === 'b' || event.key === 'a' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm') {
+                document.getElementById('audiothree').pause();
+                document.getElementById('audiotwo').pause();
+                document.getElementById('audio').load();
+                document.getElementById('audiotwo').load();
+                document.getElementById('audiothree').load();
+                document.getElementById('audiofour').load();
+                document.getElementById('audiofive').load();
+                document.getElementById('audiosix').load();
+                document.getElementById('audioseven').load();
+                document.getElementById('audioeight').load();
+                document.getElementById('audionine').load();
+                document.getElementById('audioten').load();
+                document.getElementById('audioeleven').load();
+                document.getElementById('audiotaval').load();
+                document.getElementById('audiom').load();
+                document.getElementById('audioo').load();
+                document.getElementById('audiop').load();
+                document.getElementById('audioq').load();
+
             }
         })
     </script>
@@ -138,8 +240,34 @@
             if (event.key === 'd') {
                 setTimeout(() => {
                     document.getElementById('audiofour').play()
-                    document.getElementById('d').style.backgroundColor='red';
+                    document.getElementById('d').style.backgroundColor = 'black';
+                    document.getElementById('d').style.color = 'white'; let arr = ['a', 'c', 'b', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+                    for (let i = 0; i < arr.length; i++) {
+                        document.getElementById(arr[i]).style.backgroundColor = 'white';
+                        document.getElementById(arr[i]).style.color = 'black';
+                    }
                 }, 100);
+            }
+            else if (event.key === 'a' || event.key === 'c' || event.key === 'b' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm') {
+                document.getElementById('audiofour').pause();
+                document.getElementById('audiotwo').pause();
+                document.getElementById('audio').load();
+                document.getElementById('audiotwo').load();
+                document.getElementById('audiothree').load();
+                document.getElementById('audiofour').load();
+                document.getElementById('audiofive').load();
+                document.getElementById('audiosix').load();
+                document.getElementById('audioseven').load();
+                document.getElementById('audioeight').load();
+                document.getElementById('audionine').load();
+                document.getElementById('audioten').load();
+                document.getElementById('audioeleven').load();
+                document.getElementById('audiotaval').load();
+                document.getElementById('audiom').load();
+                document.getElementById('audioo').load();
+                document.getElementById('audiop').load();
+                document.getElementById('audioq').load();
+
             }
         })
     </script>
@@ -149,8 +277,34 @@
             if (event.key === 'e') {
                 setTimeout(() => {
                     document.getElementById('audiofive').play()
-                    document.getElementById('e').style.backgroundColor='red';
+                    document.getElementById('e').style.backgroundColor = 'black';
+                    document.getElementById('e').style.color = 'white'; let arr = ['a', 'c', 'd', 'b', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+                    for (let i = 0; i < arr.length; i++) {
+                        document.getElementById(arr[i]).style.backgroundColor = 'white';
+                        document.getElementById(arr[i]).style.color = 'black';
+                    }
                 }, 100);
+            }
+            else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'a' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm') {
+                document.getElementById('audiosix').pause();
+                document.getElementById('audiotwo').pause();
+                document.getElementById('audio').load();
+                document.getElementById('audiotwo').load();
+                document.getElementById('audiothree').load();
+                document.getElementById('audiofour').load();
+                document.getElementById('audiofive').load();
+                document.getElementById('audiosix').load();
+                document.getElementById('audioseven').load();
+                document.getElementById('audioeight').load();
+                document.getElementById('audionine').load();
+                document.getElementById('audioten').load();
+                document.getElementById('audioeleven').load();
+                document.getElementById('audiotaval').load();
+                document.getElementById('audiom').load();
+                document.getElementById('audioo').load();
+                document.getElementById('audiop').load();
+                document.getElementById('audioq').load();
+
             }
         })
     </script>
@@ -160,8 +314,34 @@
             if (event.key === 'f') {
                 setTimeout(() => {
                     document.getElementById('audiosix').play()
-                    document.getElementById('f').style.backgroundColor='red';
+                    document.getElementById('f').style.backgroundColor = 'black';
+                    document.getElementById('f').style.color = 'white'; let arr = ['a', 'c', 'd', 'e', 'b', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+                    for (let i = 0; i < arr.length; i++) {
+                        document.getElementById(arr[i]).style.backgroundColor = 'white';
+                        document.getElementById(arr[i]).style.color = 'black';
+                    }
                 }, 200);
+
+            }
+            else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'a' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm') {
+                document.getElementById('audioseven').pause();
+                document.getElementById('audiotwo').pause();
+                document.getElementById('audio').load();
+                document.getElementById('audiotwo').load();
+                document.getElementById('audiothree').load();
+                document.getElementById('audiofour').load();
+                document.getElementById('audiofive').load();
+                document.getElementById('audiosix').load();
+                document.getElementById('audioseven').load();
+                document.getElementById('audioeight').load();
+                document.getElementById('audionine').load();
+                document.getElementById('audioten').load();
+                document.getElementById('audioeleven').load();
+                document.getElementById('audiotaval').load();
+                document.getElementById('audiom').load();
+                document.getElementById('audioo').load();
+                document.getElementById('audiop').load();
+                document.getElementById('audioq').load();
 
             }
         })
@@ -172,8 +352,34 @@
             if (event.key === 'g') {
                 setTimeout(() => {
                     document.getElementById('audioseven').play()
-                    document.getElementById('g').style.backgroundColor='red';
+                    document.getElementById('g').style.backgroundColor = 'black';
+                    document.getElementById('g').style.color = 'white'; let arr = ['a', 'c', 'd', 'e', 'f', 'b', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+                    for (let i = 0; i < arr.length; i++) {
+                        document.getElementById(arr[i]).style.backgroundColor = 'white';
+                        document.getElementById(arr[i]).style.color = 'black';
+                    }
                 }, 200);
+
+            }
+            else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'a' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm') {
+                document.getElementById('audionine').pause();
+                document.getElementById('audiotwo').pause();
+                document.getElementById('audio').load();
+                document.getElementById('audiotwo').load();
+                document.getElementById('audiothree').load();
+                document.getElementById('audiofour').load();
+                document.getElementById('audiofive').load();
+                document.getElementById('audiosix').load();
+                document.getElementById('audioseven').load();
+                document.getElementById('audioeight').load();
+                document.getElementById('audionine').load();
+                document.getElementById('audioten').load();
+                document.getElementById('audioeleven').load();
+                document.getElementById('audiotaval').load();
+                document.getElementById('audiom').load();
+                document.getElementById('audioo').load();
+                document.getElementById('audiop').load();
+                document.getElementById('audioq').load();
 
             }
         })
@@ -184,8 +390,34 @@
             if (event.key === 'h') {
                 setTimeout(() => {
                     document.getElementById('audioeight').play()
-                    document.getElementById('h').style.backgroundColor='red';
+                    document.getElementById('h').style.backgroundColor = 'black';
+                    document.getElementById('h').style.color = 'white'; let arr = ['a', 'c', 'd', 'e', 'f', 'g', 'b', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+                    for (let i = 0; i < arr.length; i++) {
+                        document.getElementById(arr[i]).style.backgroundColor = 'white';
+                        document.getElementById(arr[i]).style.color = 'black';
+                    }
                 }, 200);
+
+            }
+            else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'a' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm') {
+                document.getElementById('audioten').pause();
+                document.getElementById('audiotwo').pause();
+                document.getElementById('audio').load();
+                document.getElementById('audiotwo').load();
+                document.getElementById('audiothree').load();
+                document.getElementById('audiofour').load();
+                document.getElementById('audiofive').load();
+                document.getElementById('audiosix').load();
+                document.getElementById('audioseven').load();
+                document.getElementById('audioeight').load();
+                document.getElementById('audionine').load();
+                document.getElementById('audioten').load();
+                document.getElementById('audioeleven').load();
+                document.getElementById('audiotaval').load();
+                document.getElementById('audiom').load();
+                document.getElementById('audioo').load();
+                document.getElementById('audiop').load();
+                document.getElementById('audioq').load();
 
             }
         })
@@ -196,8 +428,34 @@
             if (event.key === 'i') {
                 setTimeout(() => {
                     document.getElementById('audionine').play()
-                    document.getElementById('i').style.backgroundColor='red';
+                    document.getElementById('i').style.backgroundColor = 'black';
+                    document.getElementById('i').style.color = 'white'; let arr = ['a', 'c', 'd', 'e', 'f', 'g', 'h', 'b', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+                    for (let i = 0; i < arr.length; i++) {
+                        document.getElementById(arr[i]).style.backgroundColor = 'white';
+                        document.getElementById(arr[i]).style.color = 'black';
+                    }
                 }, 200);
+
+            }
+            else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'a' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm') {
+                document.getElementById('audioeleven').pause();
+                document.getElementById('audiotwo').pause();
+                document.getElementById('audio').load();
+                document.getElementById('audiotwo').load();
+                document.getElementById('audiothree').load();
+                document.getElementById('audiofour').load();
+                document.getElementById('audiofive').load();
+                document.getElementById('audiosix').load();
+                document.getElementById('audioseven').load();
+                document.getElementById('audioeight').load();
+                document.getElementById('audionine').load();
+                document.getElementById('audioten').load();
+                document.getElementById('audioeleven').load();
+                document.getElementById('audiotaval').load();
+                document.getElementById('audiom').load();
+                document.getElementById('audioo').load();
+                document.getElementById('audiop').load();
+                document.getElementById('audioq').load();
 
             }
         })
@@ -208,8 +466,34 @@
             if (event.key === 'j') {
                 setTimeout(() => {
                     document.getElementById('audioten').play()
-                    document.getElementById('j').style.backgroundColor='red';
+                    document.getElementById('j').style.backgroundColor = 'black';
+                    document.getElementById('j').style.color = 'white'; let arr = ['a', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'b', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+                    for (let i = 0; i < arr.length; i++) {
+                        document.getElementById(arr[i]).style.backgroundColor = 'white';
+                        document.getElementById(arr[i]).style.color = 'black';
+                    }
                 }, 200);
+
+            }
+            else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'a' || event.key === 'a' || event.key === 'k' || event.key === 'l' || event.key === 'm') {
+                document.getElementById('audiotaval').pause();
+                document.getElementById('audiotwo').pause();
+                document.getElementById('audio').load();
+                document.getElementById('audiotwo').load();
+                document.getElementById('audiothree').load();
+                document.getElementById('audiofour').load();
+                document.getElementById('audiofive').load();
+                document.getElementById('audiosix').load();
+                document.getElementById('audioseven').load();
+                document.getElementById('audioeight').load();
+                document.getElementById('audionine').load();
+                document.getElementById('audioten').load();
+                document.getElementById('audioeleven').load();
+                document.getElementById('audiotaval').load();
+                document.getElementById('audiom').load();
+                document.getElementById('audioo').load();
+                document.getElementById('audiop').load();
+                document.getElementById('audioq').load();
 
             }
         })
@@ -220,9 +504,35 @@
             if (event.key === 'k') {
                 setTimeout(() => {
                     document.getElementById('audioeleven').play()
-                    document.getElementById('k').style.backgroundColor='red';
+                    document.getElementById('k').style.backgroundColor = 'black';
+                    document.getElementById('k').style.color = 'white'; let arr = ['a', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'b', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+                    for (let i = 0; i < arr.length; i++) {
+                        document.getElementById(arr[i]).style.backgroundColor = 'white';
+                        document.getElementById(arr[i]).style.color = 'black';
+                    }
 
                 }, 200);
+            }
+            else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'a' || event.key === 'l' || event.key === 'm') {
+                document.getElementById('audioeleven').pause();
+                document.getElementById('audiotwo').pause();
+                document.getElementById('audio').load();
+                document.getElementById('audiotwo').load();
+                document.getElementById('audiothree').load();
+                document.getElementById('audiofour').load();
+                document.getElementById('audiofive').load();
+                document.getElementById('audiosix').load();
+                document.getElementById('audioseven').load();
+                document.getElementById('audioeight').load();
+                document.getElementById('audionine').load();
+                document.getElementById('audioten').load();
+                document.getElementById('audioeleven').load();
+                document.getElementById('audiotaval').load();
+                document.getElementById('audiom').load();
+                document.getElementById('audioo').load();
+                document.getElementById('audiop').load();
+                document.getElementById('audioq').load();
+
             }
         })
     </script>
@@ -232,8 +542,34 @@
             if (event.key === 'l') {
                 setTimeout(() => {
                     document.getElementById('audiotaval').play()
-                    document.getElementById('l').style.backgroundColor='red';
+                    document.getElementById('l').style.backgroundColor = 'black';
+                    document.getElementById('l').style.color = 'white'; let arr = ['a', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'b', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+                    for (let i = 0; i < arr.length; i++) {
+                        document.getElementById(arr[i]).style.backgroundColor = 'white';
+                        document.getElementById(arr[i]).style.color = 'black';
+                    }
                 }, 200);
+            }
+            else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'a' || event.key === 'm') {
+                document.getElementById('audiotaval').pause();
+                document.getElementById('audiotwo').pause();
+                document.getElementById('audio').load();
+                document.getElementById('audiotwo').load();
+                document.getElementById('audiothree').load();
+                document.getElementById('audiofour').load();
+                document.getElementById('audiofive').load();
+                document.getElementById('audiosix').load();
+                document.getElementById('audioseven').load();
+                document.getElementById('audioeight').load();
+                document.getElementById('audionine').load();
+                document.getElementById('audioten').load();
+                document.getElementById('audioeleven').load();
+                document.getElementById('audiotaval').load();
+                document.getElementById('audiom').load();
+                document.getElementById('audioo').load();
+                document.getElementById('audiop').load();
+                document.getElementById('audioq').load();
+
             }
         })
     </script>
@@ -243,11 +579,241 @@
             if (event.key === 'm') {
                 setTimeout(() => {
                     document.getElementById('audiom').play()
-                    document.getElementById('m').style.backgroundColor='red';
+                    document.getElementById('m').style.backgroundColor = 'black';
+                    document.getElementById('m').style.color = 'white'; let arr = ['a', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'b', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+                    for (let i = 0; i < arr.length; i++) {
+                        document.getElementById(arr[i]).style.backgroundColor = 'white';
+                        document.getElementById(arr[i]).style.color = 'black';
+                    }
                 }, 200);
+            }
+            else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'a') {
+                document.getElementById('audiom').pause();
+                document.getElementById('audiotwo').pause();
+                document.getElementById('audio').load();
+                document.getElementById('audiotwo').load();
+                document.getElementById('audiothree').load();
+                document.getElementById('audiofour').load();
+                document.getElementById('audiofive').load();
+                document.getElementById('audiosix').load();
+                document.getElementById('audioseven').load();
+                document.getElementById('audioeight').load();
+                document.getElementById('audionine').load();
+                document.getElementById('audioten').load();
+                document.getElementById('audioeleven').load();
+                document.getElementById('audiotaval').load();
+                document.getElementById('audiom').load();
+                document.getElementById('audioo').load();
+                document.getElementById('audiop').load();
+                document.getElementById('audioq').load();
+
             }
         })
     </script>
+    <!-- button===n -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'n') {
+                setTimeout(() => {
+                    document.getElementById('audion').play()
+                    // document.getElementById('m').style.backgroundColor = 'red';
+                }, 200);
+            }
+            else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm' || event.key === 'a') {
+                document.getElementById('audion').pause();
+                document.getElementById('audiotwo').pause();
+                document.getElementById('audio').load();
+                document.getElementById('audiotwo').load();
+                document.getElementById('audiothree').load();
+                document.getElementById('audiofour').load();
+                document.getElementById('audiofive').load();
+                document.getElementById('audiosix').load();
+                document.getElementById('audioseven').load();
+                document.getElementById('audioeight').load();
+                document.getElementById('audionine').load();
+                document.getElementById('audioten').load();
+                document.getElementById('audioeleven').load();
+                document.getElementById('audiotaval').load();
+                document.getElementById('audiom').load();
+                document.getElementById('audioo').load();
+                document.getElementById('audiop').load();
+                document.getElementById('audioq').load();
+
+            }
+        })
+    </script>
+    <!-- button===o -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'o') {
+                setTimeout(() => {
+                    document.getElementById('audioo').play()
+                    // document.getElementById('o').style.backgroundColor = 'red';
+                }, 200);
+            }
+            else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm' || event.key === 'a' || event.key === 'n') {
+                document.getElementById('audioo').pause();
+                document.getElementById('audiotwo').pause();
+                document.getElementById('audio').load();
+                document.getElementById('audiotwo').load();
+                document.getElementById('audiothree').load();
+                document.getElementById('audiofour').load();
+                document.getElementById('audiofive').load();
+                document.getElementById('audiosix').load();
+                document.getElementById('audioseven').load();
+                document.getElementById('audioeight').load();
+                document.getElementById('audionine').load();
+                document.getElementById('audioten').load();
+                document.getElementById('audioeleven').load();
+                document.getElementById('audiotaval').load();
+                document.getElementById('audiom').load();
+                document.getElementById('audioo').load();
+                document.getElementById('audiop').load();
+                document.getElementById('audioq').load();
+
+            }
+        })
+    </script>
+
+    <!-- button===p -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'p') {
+                setTimeout(() => {
+                    document.getElementById('audiop').play()
+                    // document.getElementById('p').style.backgroundColor = 'red';
+                }, 200);
+            }
+            else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm' || event.key === 'a' || event.key === 'n' || event.key === 'o') {
+                document.getElementById('audiop').pause();
+                document.getElementById('audiotwo').pause();
+                document.getElementById('audio').load();
+                document.getElementById('audiotwo').load();
+                document.getElementById('audiothree').load();
+                document.getElementById('audiofour').load();
+                document.getElementById('audiofive').load();
+                document.getElementById('audiosix').load();
+                document.getElementById('audioseven').load();
+                document.getElementById('audioeight').load();
+                document.getElementById('audionine').load();
+                document.getElementById('audioten').load();
+                document.getElementById('audioeleven').load();
+                document.getElementById('audiotaval').load();
+                document.getElementById('audiom').load();
+                document.getElementById('audioo').load();
+                document.getElementById('audiop').load();
+                document.getElementById('audioq').load();
+
+            }
+        })
+    </script>
+
+    <!-- button===q -->
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'q') {
+                setTimeout(() => {
+                    document.getElementById('audioq').play()
+                    // document.getElementById('p').style.backgroundColor = 'red';
+                }, 200);
+            }
+            // else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm'|| event.key === 'a' || event.key === 'n' || event.key === 'o' || event.key === 'p' ) {
+            //     document.getElementById('audioq').pause();
+            // }
+        })
+    </script>
+    <!-- button===r -->
+
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'r') {
+                setTimeout(() => {
+                    document.getElementById('audior').play()
+                    // document.getElementById('p').style.backgroundColor = 'red';
+                }, 200);
+            }
+            // else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm'|| event.key === 'a' || event.key === 'n' || event.key === 'o' || event.key === 'p'|| event.key === 'q' ) {
+            //     document.getElementById('audior').pause();
+            // }
+        })
+    </script>
+
+    <!-- button===s -->
+
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 's') {
+                setTimeout(() => {
+                    document.getElementById('audios').play()
+                    // document.getElementById('p').style.backgroundColor = 'red';
+                }, 200);
+            }
+            // else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm'|| event.key === 'a' || event.key === 'n' || event.key === 'o' || event.key === 'p'|| event.key === 'q'|| event.key === 'r' ) {
+            //     document.getElementById('audios').pause();
+            // }
+        })
+    </script>
+
+    <!-- button===t -->
+
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 't') {
+                setTimeout(() => {
+                    document.getElementById('audiot').play()
+                    // document.getElementById('p').style.backgroundColor = 'red';
+                }, 200);
+            }
+            // else if (event.key === 'b' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm'|| event.key === 'a' || event.key === 'n' || event.key === 'o' || event.key === 'p'|| event.key === 'q'|| event.key === 'r' || event.key === 's' ) {
+            //     document.getElementById('audiot').pause();
+            // }
+        })
+    </script>
+
+<script>
+    document.addEventListener("keypress", (event) => {
+        if (event.key === 'z') {
+            setTimeout(() => {
+
+                document.getElementById('fari').play()
+                document.getElementById('z').style.backgroundColor = 'black';
+                document.getElementById('z').style.color = 'white';
+
+                let arr = ['a', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+                for (let i = 0; i < arr.length; i++) {
+                    document.getElementById(arr[i]).style.backgroundColor = 'white';
+                    document.getElementById(arr[i]).style.color = 'black';
+                }
+
+
+            }, 100);
+
+
+        }
+        else if (event.key === 'a' || event.key === 'c' || event.key === 'd' || event.key === 'e' || event.key === 'f' || event.key === 'g' || event.key === 'h' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 'l' || event.key === 'm') {
+            document.getElementById('fari').pause();
+            document.getElementById('audio').load();
+            document.getElementById('audiotwo').load();
+            document.getElementById('audiothree').load();
+            document.getElementById('audiofour').load();
+            document.getElementById('audiofive').load();
+            document.getElementById('audiosix').load();
+            document.getElementById('audioseven').load();
+            document.getElementById('audioeight').load();
+            document.getElementById('audionine').load();
+            document.getElementById('audioten').load();
+            document.getElementById('audioeleven').load();
+            document.getElementById('audiotaval').load();
+            document.getElementById('audiom').load();
+            document.getElementById('audioo').load();
+            document.getElementById('audiop').load();
+            document.getElementById('audioq').load();
+
+        }
+
+    })
+</script>
+
 </body>
 
 </html>

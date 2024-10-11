@@ -17,6 +17,12 @@ body {
     width: 40px;
     height: 70%;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 #a {
@@ -28,6 +34,7 @@ body {
     align-items: end;
     cursor: pointer;
     background-color: white;
+    font-weight: 700;
 }
 
 #b {
@@ -38,7 +45,7 @@ body {
     align-items: end;
     cursor: pointer;
     background-color: white;
-
+    font-weight: 700;
 }
 
 #c {
@@ -49,7 +56,7 @@ body {
     align-items: end;
     cursor: pointer;
     background-color: white;
-
+    font-weight: 700;
 }
 
 #d {
@@ -60,7 +67,7 @@ body {
     align-items: end;
     cursor: pointer;
     background-color: white;
-
+    font-weight: 700;
 }
 
 #e {
@@ -71,7 +78,7 @@ body {
     align-items: end;
     cursor: pointer;
     background-color: white;
-
+    font-weight: 700;
 }
 
 #f {
@@ -82,7 +89,7 @@ body {
     align-items: end;
     cursor: pointer;
     background-color: white;
-
+    font-weight: 700;
 }
 
 #g {
@@ -93,7 +100,7 @@ body {
     align-items: end;
     cursor: pointer;
     background-color: white;
-
+    font-weight: 700;
 }
 
 #h {
@@ -104,7 +111,7 @@ body {
     align-items: end;
     cursor: pointer;
     background-color: white;
-
+    font-weight: 700;
 }
 
 #i {
@@ -115,7 +122,7 @@ body {
     align-items: end;
     cursor: pointer;
     background-color: white;
-
+    font-weight: 700;
 }
 
 #j {
@@ -126,7 +133,7 @@ body {
     align-items: end;
     cursor: pointer;
     background-color: white;
-
+    font-weight: 700;
 }
 
 #k {
@@ -137,7 +144,7 @@ body {
     align-items: end;
     cursor: pointer;
     background-color: white;
-
+    font-weight: 700;
 }
 
 #l {
@@ -148,7 +155,7 @@ body {
     align-items: end;
     cursor: pointer;
     background-color: white;
-
+    font-weight: 700;
 }
 
 #m {
@@ -159,5 +166,175 @@ body {
     align-items: end;
     cursor: pointer;
     background-color: white;
-
+    font-weight: 700;
+}
+.second{
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#z{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+@media(width <= 425px){
+    .main {
+        width: 100%;
+        height: 400px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+   transform: rotate(90deg);
+    } 
+    #a {
+        width: 62.5px;
+        height: 350px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        cursor: pointer;
+        background-color: white;
+        font-weight: 700;
+    }
+    
+    #b {
+        width: 62.5px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        cursor: pointer;
+        background-color: white;
+        font-weight: 700;
+    }
+    
+    #c {
+        width: 62.5px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        cursor: pointer;
+        background-color: white;
+        font-weight: 700;
+    }
+    
+    #d {
+        width: 62.5px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        cursor: pointer;
+        background-color: white;
+        font-weight: 700;
+    }
+    
+    #e {
+        width: 62.5px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        cursor: pointer;
+        background-color: white;
+        font-weight: 700;
+    }
+    
+    #f {
+        width: 62.5px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        cursor: pointer;
+        background-color: white;
+        font-weight: 700;
+    }
+    
+    #g {
+        width: 62.5px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        cursor: pointer;
+        background-color: white;
+        font-weight: 700;
+    }
+    
+    #h {
+        width: 62.5px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        cursor: pointer;
+        background-color: white;
+        font-weight: 700;
+    }
+    
+    #i {
+        width: 62.5px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        cursor: pointer;
+        background-color: white;
+        font-weight: 700;
+    }
+    
+    #j {
+        width: 62.5px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        cursor: pointer;
+        background-color: white;
+        font-weight: 700;
+    }
+    
+    #k {
+        width: 62.5px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        cursor: pointer;
+        background-color: white;
+        font-weight: 700;
+    }
+    
+    #l {
+        width: 62.5px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        cursor: pointer;
+        background-color: white;
+        font-weight: 700;
+    }
+    
+    #m {
+        width: 62.5px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        cursor: pointer;
+        background-color: white;
+        font-weight: 700;
+    }
 }

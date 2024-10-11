@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main {
+        width: 500px;
+        height: 200px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .f{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+    .pre{
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+    .next{
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+    .pause{
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+    <div class="main" id="a">
+        <button onclick="btn()" class="f" id="big"></button>
+        <button class="next">n</button>
+        <button class="pause">=</button>
+        <button class="pre">pre</button>
+    </div>
+
+    <audio id="audio" src="./audio/a11.mp3"></audio>
+    <audio id="audiotwo" src="./audio/a9.mp3"></audio>
+    <audio id="audiothree" src="./audio/a10.mp3"></audio>
+
+</body>
+<script>
+    let count=0;
+    function btn(){
+// a.addEventListener("click",()=>{
+  document.getElementById('big')
+  count++;
+  console.log(count)
+  if(count == 1){
+       document.getElementById('audio').play()
+    }
+   else if(count == 2){
+       document.getElementById('audiotwo').play()
+    }
+    else if(count == 3){
+       document.getElementById('audiothree').play()
+    }
+}
+
+    // })
+ 
+
+</script>
+
+</html>
